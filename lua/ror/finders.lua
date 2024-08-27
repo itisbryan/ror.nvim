@@ -49,9 +49,9 @@ function M.select_finders()
 
 	for _, finder in ipairs(finders) do
 		if finder.category ~= current_category then
-			if #display_finders > 0 then
-				table.insert(display_finders, create_divider(""))
-			end
+			-- if #display_finders > 0 then
+			-- 	table.insert(display_finders, create_divider(""))
+			-- end
 			local icon = CategoryIcons[finder.category] or ""
 			local category_name = finder.category:upper()
 			table.insert(display_finders, create_divider(icon .. " " .. category_name .. " " .. icon))
