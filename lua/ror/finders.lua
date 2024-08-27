@@ -32,10 +32,12 @@ function M.select_finders()
 			require("ror.finders.service").find()
 		elseif finder == "Service Tests" then
 			require("ror.finders.service_test").find()
-		elseif finder == "[GRAPHQL] Types" then
+		elseif finder == "(GRAPHQL) Types" then
 			require("ror.finders.graphql_type").find()
-		elseif finder == "[GRAPHQL] Mutations" then
+		elseif finder == "(GRAPHQL) Mutations" then
 			require("ror.finders.graphql_mutation").find()
+		elseif finder == "(GRAPHQL) Resolvers" then
+			require("ror.finders.graphql_resolver").find()
 		end
 	end)
 end
