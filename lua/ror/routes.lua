@@ -13,7 +13,7 @@ local function get_project_path()
 end
 
 local function get_routes_path()
-	return get_project_path() .. "/routes.{json,rb}"
+	return get_project_path() .. "/routes.json"
 end
 
 local function create_ror_directory()
